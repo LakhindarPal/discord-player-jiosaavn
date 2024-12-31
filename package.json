@@ -1,0 +1,47 @@
+{
+  "name": "discord-player-jiosaavn",
+  "version": "0.0.1",
+  "description": "A custom extractor made for discord-player that enables you to extract from JioSaavn.",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Lakhindar Pal",
+  "scripts": {
+    "build": "npm run lint && tsup",
+    "lint": "tslint -p tsconfig.json",
+    "format": "prettier --write .",
+    "npm:publish": "npm run build && npm publish --access public",
+    "prepare": "tsup"
+  },
+  "homepage": "https://github.com/LakhindarPal/discord-player-jiosaavn#readme",
+  "bugs": {
+    "url": "https://github.com/LakhindarPal/discord-player-jiosaavn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LakhindarPal/discord-player-jiosaavn.git"
+  },
+  "devDependencies": {
+    "@discord-player/extractor": "^4.5.1",
+    "discord-player": "^6.7.1",
+    "discord.js": "^14.16.3",
+    "prettier": "3.4.2",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "jiosaavn-api",
+    "discord-player",
+    "discord-player-jiosaavn",
+    "music",
+    "discord-player-extractor",
+    "discord-player-jiosaavn-extractor",
+    "api",
+    "discord-music",
+    "jiosaavn-dl"
+  ],
+  "dependencies": {
+    "jsdom": "^25.0.1"
+  }
+}
